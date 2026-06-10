@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform, useInView, AnimatePresence } from "fra
 
 const GlobalStyles = () => (
   <style>{`
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -32,7 +32,7 @@ const GlobalStyles = () => (
     body {
       background: var(--void);
       color: var(--text);
-      font-family: 'Inter', sans-serif;
+      font-family: 'Geist', sans-serif;
       overflow-x: hidden;
       line-height: 1.6;
     }
@@ -41,7 +41,7 @@ const GlobalStyles = () => (
     ::-webkit-scrollbar-track { background: var(--void); }
     ::-webkit-scrollbar-thumb { background: var(--mint); border-radius: 2px; }
 
-    .display { font-family: 'Space Grotesk', sans-serif; }
+    .display { font-family: 'Geist', sans-serif; }
     .mono { font-family: 'JetBrains Mono', monospace; }
 
     .mint { color: var(--mint); }
@@ -388,7 +388,7 @@ const Hero = () => {
             <a href="#projects" style={{
               background: "var(--mint)", color: "var(--void)", padding: "0.85rem 2rem",
               borderRadius: 8, fontWeight: 700, textDecoration: "none",
-              fontFamily: "Space Grotesk", fontSize: "0.95rem", letterSpacing: "0.03em",
+              fontFamily: "Geist", fontSize: "0.95rem", letterSpacing: "0.03em",
               transition: "box-shadow 0.2s, transform 0.2s",
             }}
               onMouseEnter={e => { e.target.style.boxShadow = "0 0 30px #00FFB260"; e.target.style.transform = "translateY(-2px)"; }}
@@ -399,7 +399,7 @@ const Hero = () => {
             <a href="#contact" style={{
               border: "1px solid #ffffff20", color: "var(--text)", padding: "0.85rem 2rem",
               borderRadius: 8, fontWeight: 500, textDecoration: "none",
-              fontFamily: "Space Grotesk", fontSize: "0.95rem",
+              fontFamily: "Geist", fontSize: "0.95rem",
               transition: "border-color 0.2s, color 0.2s",
             }}
               onMouseEnter={e => { e.target.style.borderColor = "var(--mint)"; e.target.style.color = "var(--mint)"; }}
@@ -583,7 +583,7 @@ const Riyadh = () => {
       <div className="container">
         <Reveal>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.5rem" }}>
-            <div className="label" style={{ color: "var(--amber)" }}>◆ &nbsp;Special Assignment</div>
+            <div className="label" style={{ color: "var(--amber)" }}>◆ &nbsp;On-Site Experience</div>
             <div style={{
               background: "var(--amber-dim)", border: "1px solid var(--amber)",
               padding: "0.2rem 0.8rem", borderRadius: 9999, fontSize: "0.72rem",
@@ -596,11 +596,11 @@ const Riyadh = () => {
 
         <Reveal delay={0.1}>
           <h2 className="display" style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", fontWeight: 700, marginBottom: "0.8rem", lineHeight: 1.1 }}>
-            The Riyadh Chapter.
+            Working on-site in Riyadh, Saudi Arabia.
           </h2>
           <p style={{ color: "var(--text-muted)", maxWidth: 600, marginBottom: "3.5rem", lineHeight: 1.7 }}>
-            An immersive onsite engagement building digital infrastructure for one of the region's
-            most ambitious e-governance transformation programs.
+            I spent time working directly with a government client in Riyadh, helping them build and launch
+            a citizen-facing portal that made public services available online for the first time.
           </p>
         </Reveal>
 
@@ -1022,7 +1022,7 @@ const Contact = () => (
               style={{
                 display: "block", textAlign: "center", background: "var(--mint)", color: "var(--void)",
                 padding: "0.9rem", borderRadius: 8, fontWeight: 700, textDecoration: "none",
-                fontFamily: "Space Grotesk", marginTop: "auto",
+                fontFamily: "Geist", marginTop: "auto",
               }}
               whileHover={{ boxShadow: "0 0 30px #00FFB260" }}
               whileTap={{ scale: 0.98 }}
